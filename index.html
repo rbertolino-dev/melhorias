@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestor de Instâncias</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              border: "hsl(214 32% 91%)",
+              input: "hsl(214 32% 91%)",
+              ring: "hsl(217 91% 60%)",
+              background: "hsl(210 20% 98%)",
+              foreground: "hsl(222 47% 11%)",
+              primary: {
+                DEFAULT: "hsl(217 91% 60%)",
+                foreground: "hsl(0 0% 100%)",
+              },
+              destructive: {
+                DEFAULT: "hsl(0 84% 60%)",
+                foreground: "hsl(0 0% 100%)",
+              },
+              success: {
+                DEFAULT: "hsl(142 76% 36%)",
+                foreground: "hsl(0 0% 100%)",
+              },
+              muted: {
+                DEFAULT: "hsl(210 40% 96%)",
+                foreground: "hsl(215 16% 47%)",
+              },
+              card: {
+                DEFAULT: "hsl(0 0% 100%)",
+                foreground: "hsl(222 47% 11%)",
+              },
+            },
+            borderRadius: {
+              lg: "0.75rem",
+              md: "calc(0.75rem - 2px)",
+              sm: "calc(0.75rem - 4px)",
+            },
+          },
+        },
+      };
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
